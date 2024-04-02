@@ -1,22 +1,23 @@
 name: Telegram Bot Reminder
 
 on:
-  workflow_dispatch:  # Permite la activación manual desde GitHub
+  schedule:
+    - cron: '*/5 * * * *'  # Ejecutar el script cada 5 minutos
 
 jobs:
   send-reminder:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      
+
       - name: Install dependencies
         run: pip install requests
-      
+
       - name: Run bot script
         run: python ./bot_script.py
         env:
