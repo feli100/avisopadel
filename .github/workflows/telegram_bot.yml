@@ -2,7 +2,7 @@ name: Telegram Bot Reminder
 
 on:
   schedule:
-    - cron: '40 10 * * 2'  # Martes a las 12:40 hora española de verano (10:40 UTC)
+    - cron: '46 10 * * 2'  # Martes a las 12:40 hora española de verano (10:40 UTC)
     - cron: '59 21 * * 5'  # Viernes a las 23:59 hora española de verano (21:59 UTC)
     - cron: '0 8 * * 6'    # Sábado a las 10:00 hora española de verano (08:00 UTC)
 
