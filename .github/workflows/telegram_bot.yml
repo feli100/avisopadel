@@ -1,10 +1,10 @@
-name: Telegram Bot Reminder
+#name: Telegram Bot Reminder
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # Ejecutar el script cada 5 minutos
+#on:
+ # schedule:
+ #   - cron: '*/5 * * * *'  # Ejecutar el script cada 5 minutos
 
-jobs:
+#jobs:
   send-reminder:
     runs-on: ubuntu-latest
     steps:
