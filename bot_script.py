@@ -9,6 +9,5 @@ def enviar_mensaje_telegram(mensaje):
     response = requests.post(url, data=datos)
     print(response.text)  # Para depuración
 
-# Mensaje que deseas enviar
-mensaje = "Hola, esto es una alarma para que alquiles la pista del próximo martes."
-enviar_mensaje_telegram(mensaje)
+# Mensaje de prueba
+enviar_mensaje_telegram("Mensaje de prueba de mi bot de Telegram.")
